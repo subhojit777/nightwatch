@@ -2,15 +2,13 @@
 # Nightwatch.js Dockerfile
 #
 
-FROM alpine:3.4
+FROM mhart/alpine-node:6
 
-MAINTAINER Sebastian Tschan <mail@blueimp.net>
+MAINTAINER Subhojit Paul <subhojitpaul21@gmail.com>
 
 RUN apk --no-cache add \
     # Install tini, a tiny but valid init for containers:
     tini \
-    # Install NodeJS:
-    nodejs-lts \
     # Install ffmpeg for video recording:
     ffmpeg \
   && npm install -g \
