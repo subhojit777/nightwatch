@@ -13,7 +13,7 @@ RUN apk --no-cache add \
     ffmpeg \
   && npm install -g \
     # Install Nightwatch.js:
-    nightwatch \
+    gulp-cli \
   # Clean up obsolete files:
   && rm -rf \
     /tmp/* \
