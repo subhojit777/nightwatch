@@ -11,6 +11,10 @@ RUN apk --no-cache add \
     tini \
     # Install ffmpeg for video recording:
     ffmpeg \
+    # Install git:
+    bash \
+    git \
+    openssh \
   && npm install -g \
     # Install Nightwatch.js:
     gulp-cli \
